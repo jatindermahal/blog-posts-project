@@ -1,0 +1,41 @@
+.container-fluid{
+    margin:3px;
+    background-color:rgba(245, 232, 188, 0.71);
+}
+body{
+    background-color:rgb(247, 235, 199);
+}
+
+h2{
+    font-size:35px;
+}
+
+p{
+    font-size: 20px;
+}
+
+.custom{
+    padding: 25px;
+    margin:1.1em;
+    /* display:flex; */
+    box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.3),
+    5px 8px 8px rgba(0,0,0,0.3),
+    5px 8px 8px rgba(0,0,0,0.3),
+    5px 8px 8px rgba(0,0,0,0.3);
+    background-color: rgba(213, 216, 218, 0.53);
+}
+
+.effect:hover {
+    animation-name: background-color;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+  }
+
+@keyframes background-color{
+  0%{
+    width:80px;
+  }
+  100%{
+    width:90px;
+  }
+}

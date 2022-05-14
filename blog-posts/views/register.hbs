@@ -1,0 +1,55 @@
+{{#if errorMessage}}
+<div class="alert alert-danger"> <strong>Error:</strong> {{errorMessage}}</div>
+{{/if}}
+
+{{#if successMessage}}
+    <div class="alert alert-success"> <strong>Success:</strong> {{successMessage}}</div>
+    <a class="btn btn-success pull-right" href="/login">&nbsp;&nbsp;&nbsp;Proceed to Log in&nbsp;&nbsp;&nbsp;</a><br /><br /><br />
+
+{{else}}
+<div class="row custom">
+    <div class="col-md-12">
+
+        <h2>Register</h2>
+        <hr />
+
+        <form method="post" action="/register">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="userName">Username</label>
+                        <input class="form-control" id="userName" name="userName" type="text" placeholder="User Name" required value=""
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input class="form-control" id="password" name="password" type="password" placeholder="Password" required />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="password2">Password</label>
+                        <input class="form-control" id="password2" name="password2" type="password" placeholder="Confirm Password" required />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input class="form-control" id="email" name="email" type="email" placeholder="Email Address" required />
+                    </div>
+                </div>
+            </div>
+            <input type="submit" class="btn btn-success pull-right effect" value="Register" />
+        </form>
+
+    </div>
+</div>
+{{/if}}

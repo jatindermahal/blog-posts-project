@@ -1,0 +1,32 @@
+{{#if errorMessage}}
+<div class="alert alert-danger"> <strong>Error:</strong> {{errorMessage}}</div>
+{{/if}}
+
+
+<div class="row custom">
+    <div class="col-md-12">
+        <h2>Log In</h2>
+        <hr />
+
+        <form method="post" action="/login">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="userName">User Name</label>
+                        <input class="form-control" id="userName" name="userName" type="text" placeholder="User Name" required value=""
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="password">PassWord</label>
+                        <input class="form-control" id="password" name="password" type="password" placeholder="Password" required />
+                    </div>
+                </div>
+            </div>
+            <input type="submit" class="btn btn-success pull-right effect" value="Login" />
+        </form>
+    </div>
+</div>
