@@ -29,3 +29,6 @@ For passwords, I hashed them using bycryptjs 3rd party module as the sensitive i
 1. I have implemented sessions in this project. So, if the page is inactive for more than 2 minutes, the user will be logged out and he has to log in again.
 2. The routes in examples will show no data if the posts with that id/category does not exist or have been removed.
 3. Only those posts which are published will show on blog page.
+
+### Live demo
+Go to this [link](https://obscure-harbor-59377.herokuapp.com/blog)
