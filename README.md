@@ -14,9 +14,9 @@ When the user is successfully registered, he has to proceed to login using the s
 Without even having to log into the system, the user can view all blog posts  and categories or can even filter them by modifying the query string.
 
   Some of the examples are:
-  1. To view blog post with id 26: `/blog/30?category=`
+  1. To view blog post with id 26: `/blog/26?category=`
   2. To view blog posts with category 15: `/blog?category=15`
-  3. To view blog post with id 43 from category 17 :  `/blog?category=17`
+  3. To view blog post with id 43 from category 17 :  `/blog/43?category=17`
 
 
 Or even better, use the blog page itself.
