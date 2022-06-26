@@ -14,9 +14,9 @@ When the user is successfully registered, he has to proceed to login using the s
 Without even having to log into the system, the user can view all blog posts  and categories or can even filter them by modifying the query string.
 
   Some of the examples are:
-  1. To view blog post with id 26: "/blog/30?category="
-  2. To view blog posts with category 15: "/blog?category=15"
-  3. To view blog post with id 43 from category 17 :  "/blog?category=17"
+  1. To view blog post with id 26: `/blog/30?category=`
+  2. To view blog posts with category 15: `/blog?category=15`
+  3. To view blog post with id 43 from category 17 :  `/blog?category=17`
 
 
 Or even better, use the blog page itself.
@@ -24,7 +24,7 @@ The logged user has access to view all posts as well as categories and also crea
 I used postgres to stores posts and categories to database. To store the user's information including passwords, mongodb was used by me.
 For passwords, I hashed them using bycryptjs 3rd party module as the sensitive information should never be stored directly.
 
-Notes:
+## Notes:
 
 1. I have implemented sessions in this project. So, if the page is inactive for more than 2 minutes, the user will be logged out and he has to log in again.
 2. The routes in examples will show no data if the posts with that id/category does not exist or have been removed.
