@@ -31,4 +31,4 @@ For passwords, I hashed them using bycryptjs 3rd party module as the sensitive i
 3. Only those posts which are published will show on blog page.
 
 ### Live demo
-Go to this [link](https://obscure-harbor-59377.herokuapp.com/blog)
+Go to this [link](https://pure-spire-94701.herokuapp.com/)
